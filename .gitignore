@@ -11,20 +11,36 @@ ENV/
 pip-log.txt
 pip-delete-this-directory.txt
 
-# Environment variables
+# Environment variables (CRITICAL - NEVER COMMIT)
 .env
 config/.env
+*.key
+*_credentials.json
+
+# API Keys and Secrets (NEVER COMMIT)
+*api_key*
+*secret*
+*token*
+*password*
+suno_api_key.txt
+youtube_stream_key.txt
 
 # Logs
 *.log
 logs/
+/var/log/
+deployment_history.log
+emergency.log
+emergency_recovery.log
 
-# Generated content
+# Generated content (Large files)
 music/
 videos/
 *.mp3
 *.mp4
 *.wav
+*.mov
+*.avi
 
 # System files
 .DS_Store
@@ -43,18 +59,36 @@ emergency_state.json
 emergency_recovery.pid
 health_status.json
 deployment_backup/
+*_backup_*
 
-# IDE
+# IDE and editors
 .vscode/
 .idea/
 *.swp
 *.swo
+*~
 
-# OS generated files
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
+# Cache directories
+.cache/
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+
+# Project specific
+.cntb_instances.csv
+.last_warning
+.health_failures
+
+# Deployment and server files
+.ssh/
+known_hosts
+authorized_keys
+*.pem
+
+# Audio/Video processing temporary files
+*.raw
+*.pcm
+*.yuv
+
+# Documentation (external docs dropped here)
+documentation/
