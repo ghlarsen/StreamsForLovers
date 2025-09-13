@@ -1,0 +1,6 @@
+# Minimal requirements for basic AI Music Stream functionality
+# Use this for initial deployment testing
+
+requests>=2.31.0
+python-dotenv>=1.0.0
+aiohttp>=3.8.0
