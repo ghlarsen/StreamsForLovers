@@ -23,6 +23,74 @@ If Claude Code attempts to scale beyond current stage without meeting criteria, 
 - Deploying Stage 3 without $1,000+ monthly revenue  
 - Implementing Stage 4 without $3,000+ monthly revenue
 
+## 📝 **MANDATORY SESSION MILESTONE WORKFLOW**
+
+**⚠️ WHEN USER SAYS "SET A SESSION MILESTONE" OR SIMILAR:**
+1. **IMMEDIATELY**: Push current changes to git with descriptive commit
+2. **CREATE**: Detailed milestone document in `/documentation/dev_diary/`
+3. **FILENAME FORMAT**: `YYYY-MM-DD_session_[descriptive-name].md`
+4. **INCLUDE**: Current GitHub commit ID, progress summary, next steps
+5. **TRACK**: Issues encountered, solutions applied, time spent
+
+**TRIGGER PHRASES:**
+- "set a session milestone"
+- "save our progress"  
+- "document this session"
+- "create milestone"
+- "checkpoint our work"
+
+**MANDATORY MILESTONE CONTENT:**
+```markdown
+# Session Milestone: [Date] - [Descriptive Title]
+
+**GitHub Commit**: `[commit-hash]`  
+**Date**: YYYY-MM-DD HH:MM  
+**Session Duration**: X hours  
+**Stage**: Current development stage
+
+## 🎯 **Objectives Achieved**
+- [x] Completed task 1
+- [x] Completed task 2  
+- [ ] Partial progress on task 3
+
+## 🚧 **Current Status**
+- **What's Working**: List functional components
+- **What's Broken**: List issues encountered
+- **What's Next**: Immediate next steps
+
+## 💡 **Key Learnings**
+- Important discovery 1
+- Problem solved: solution description
+- Technical insight gained
+
+## 🔧 **Technical Changes**
+- Files modified: list key files
+- APIs integrated: status of integrations
+- Infrastructure: server/deployment status
+
+## 🐛 **Issues & Solutions**
+- **Issue**: Description
+  **Solution**: How it was resolved
+  **Prevention**: How to avoid in future
+
+## 📊 **Metrics & Progress**
+- Cost tracking: current spend vs budget
+- Performance: any benchmarks or tests
+- User feedback: if applicable
+
+## 🎯 **Next Session Goals**
+1. Priority task 1
+2. Priority task 2
+3. Priority task 3
+
+## 📎 **Resources & Links**
+- Relevant documentation links
+- API endpoints used
+- External resources referenced
+```
+
+**NO EXCEPTIONS**: Every milestone request triggers this complete workflow.
+
 ## 🚀 **DEVELOPMENT COMMANDS**
 
 ### **Server Management**
